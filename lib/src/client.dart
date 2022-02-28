@@ -15,7 +15,7 @@ class GoogleDriveClient {
   GoogleDriveClient(this._dio, {@required Future<String> Function() getAccessToken, GoogleDriveSpace space}) {
     _space = space ?? GoogleDriveSpace.appDataFolder;
 
-    _dio.interceptors.add(InterceptorsWrapper(onRequest: (RequestOptions options) async {
+    _dio.interceptors.add(InterceptorsWrapper(onRequest: (RequestOptions options,RequestInterceptorHandler requestInterceptorHandler) async {
       options.headers['Authorization'] = 'Bearer ${await getAccessToken.call()}';
       return options;
     }));
