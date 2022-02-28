@@ -24,8 +24,8 @@ dependencies:
   flutter:
     sdk: flutter
 
-  dio: ^3.0.10
-  path_provider: ^1.6.24
+  dio: ^4.0.4
+  path_provider: ^2.0.8
   google_drive_client:
     path: ../
 

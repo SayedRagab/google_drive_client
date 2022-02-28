@@ -8,6 +8,6 @@ environment:
 
 dependencies:
   dio: ^4.0.4
-  path_provider: ^2.0.9
+  path_provider: ^2.0.8
   path: ^1.8.0
   mime_type: ^1.0.0
